@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "Add a button to menuHeader",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP0010001"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
