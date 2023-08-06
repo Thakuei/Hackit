@@ -10,7 +10,8 @@
   "content_scripts": [
     {
       "matches": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP0010001"],
-      "js": ["content_script.js"]
+      "matches_1": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00510?"],
+      "js": ["content.js"]
     }
   ]
 }
