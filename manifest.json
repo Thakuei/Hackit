@@ -1,17 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "My Extension",
+  "name": "Course Chart Plugin",
   "version": "1.0",
-  "description": "Add a button to menuHeader",
-  "permissions": ["activeTab"],
+  "description": "この拡張機能は、今期分の取得予定単位数をグラフとして表示させる物です。",
   "action": {
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP0010001"],
-      "matches_1": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00510?"],
-      "js": ["content.js"]
+      "matches": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00500"],
+      "js": ["popup.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "CCP.png",
+    "48": "CCP.png",
+    "128": "CCP.png"
+  }
 }

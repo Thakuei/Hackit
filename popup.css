@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.now_situation {
+  text-align: center;
+  text-decoration:underline;
+  text-decoration-color: blue;
+}
